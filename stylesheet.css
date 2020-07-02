@@ -1,0 +1,119 @@
+@charset "utf-8";
+  
+  body {
+    font-family: 'Courier New','Courier',sans-serif;
+    background-color: rgba(192,192,192,0.8);
+    animation: bg-color 20s linear infinite;
+  -webkit-animmation: bg-color 20s linear infinite;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+
+h1 {
+  color: white;
+  animation: color 20s linear infinite;
+  -webkit-animmation: color 20s linear infinite;
+  font-size: 90px;
+  font-weight: normal;
+  line-height: 65px;
+  text-align: center;
+}
+
+.main {
+  margin: 0 auto;
+  text-align: center;
+  line-height: 45px;
+  padding: 0 20px;
+}
+.links {
+  margin: 0 auto;
+  padding: 80px 0;
+  display: -webkit-box;
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+  
+  
+}
+li {
+  list-style: none;
+  border: solid 1px white;
+   animation: border-color 20s infinite;
+  -webkit-animmation: border-color 20s infinite;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+ a {
+ display: block;
+  padding: 20px 80px;
+  text-decoration: none;
+  color: white;
+   animation: s-color 20s infinite;
+  -webkit-animmation: s-color 20s infinite;
+  font-size: 24px;
+}
+
+.message {
+  margin: 0 auto;
+  padding-top: 150px;
+  color: aliceblue;
+  opacity: 0.9;
+  text-align: center;
+  padding: 0 50px;
+}
+
+@keyframes color {
+  0% { color: white; }
+  50% { color: violet; }
+  100% { color: white; }
+}
+@-webkit-keyframes color {
+  0% { color: white; }
+   50% { color: violet; }
+  100% { color: white; }
+}
+
+@keyframes bg-color {
+  0% { background-color:  rgba(192,192,192,0.8); }
+  50% { background-color:  rgba(104,213,255,0.8); }
+   100% { background-color:  rgba(192,192,192,0.8); }
+}
+@-webkit-keyframes bg-color {
+  0% { background-color:  rgba(192,192,192,0.8); }
+  50% { background-color:  rgba(104,213,255,0.8); }
+   100% { background-color:  rgba(192,192,192,0.8); }
+}
+
+ @keyframes s-color {
+  0% { color: white; }
+  50% { color: yellow; }
+   100% { color: white; }
+}
+@-webkit-keyframes s-color {
+  0% { color: white; }
+  50% { color: yellow; }
+   100% { color: white; }
+}
+
+@keyframes border-color {
+  0% { border-color: white; }
+  50% { border-color: yellow; }
+  100% { border-color: white; }
+}
+@-webkit-keyframes border-color {
+  0% { border-color: white; }
+  50% { border-color: yellow; }
+  100% { border-color: white; }
+}
+
+@media screen and (max-width : 767px){
+.main, .links .message {
+  width: 100%;
+  margin: 0 auto;
+  }
+}
+  
